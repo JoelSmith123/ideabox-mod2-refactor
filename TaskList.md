@@ -68,10 +68,10 @@
 
 35. set card border-bottom to appropriate size and #D1D3D4
 
-36. set hover state for delete buttons
+36. (JESSICA)--------------------set hover state for delete buttons
 
-37. set hover state for upvote buttons
+37. (JESSICA)--------------------set hover state for upvote buttons
 
-38. set hover state for downvote buttons
+38. (JESSICA)--------------------set hover state for downvote buttons
 
 Start stretch goals later.....
