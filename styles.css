@@ -61,7 +61,7 @@ input[name=search] {
 /*----------start idea card section styles----------*/
 
 .ideas {
-  background-color: #D3D3D3;
+  background-color: lime;
   margin: 0 auto;
   width: 40%;
 }
