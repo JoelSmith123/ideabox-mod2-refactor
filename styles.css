@@ -30,16 +30,25 @@ h1 span {
 }
 
 .user-input {
+  border: .1rem solid #D1D3D4;
   display: block;
-  height: 3em;
+  font-size: 1rem;
+  height: 2em;
   margin: 0 auto 1.5em;
   outline: none;
+  padding-left: .4rem;
   width: 55%;
+}
+
+.user-input::placeholder {
+  color: #D1D3D4;
 }
 
 .submit-btn {
   background-color: #00A79D;
+  border: none;
   color: #FFFFFF;
+  padding: 0rem;
 }
 
 .submit-btn:hover {
@@ -49,8 +58,12 @@ h1 span {
 /*----------end header section styles----------*/
 /*----------start search bar section styles----------*/
 
-.search-bar {
-  margin-top: 2em;
+.sticky-search {
+  background-color: #FFFFFF;
+  padding-bottom: .1rem;
+  padding-top: 1.5rem;
+  position: sticky;
+  top: 0rem;
 }
 
 /*----------end search bar section styles----------*/
@@ -65,7 +78,7 @@ h1 span {
 
 .idea {
   background-color: white;
-  border-bottom: thin solid #D1D3D4;
+  border-bottom: .1rem solid #D1D3D4;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
