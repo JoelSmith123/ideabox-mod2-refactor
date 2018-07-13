@@ -1,0 +1,63 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #E5F3F2;
+  padding-bottom: 0.4em;
+}
+
+h1 {
+  color: #00A79D;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4em;
+  text-align: center;
+  padding: 0.4em 0;
+}
+
+h1 span {
+  color: #6D6E71;
+}
+
+input {
+  display: block;
+  height: 3em;
+  margin: 0 auto 1.5em;
+  outline: none;
+  width: 40%;
+}
+
+input[type=text] {
+
+}
+
+input[type=submit] {
+  background-color: #00A79D;
+  color: #FFFFFF;
+}
+
+input[type=submit]:hover {
+  background-color: #045E55;
+}
+
+input[name=search] {
+  margin-top: 2em;
+}
+
+.ideas {
+  background-color: #D3D3D3;
+  margin: 0 auto;
+  width: 40%;
+}
+
+h3 {
+  color: #6D6E71;
+}
+
+p {
+  color: #939598;
+}
+
+h4 {
+  color: #6D6E71;
+}
