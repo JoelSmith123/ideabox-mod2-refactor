@@ -76,7 +76,7 @@
 
 39. finish styling header for desktop (use flex box)
 
-40. finish styling search bar for desktop (flexbox and sticky)
+40. (DONE)--------------------finish styling search bar for desktop (flexbox and sticky)
 
 41. (DONE)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
 
