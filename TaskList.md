@@ -54,24 +54,24 @@
 
 28. (DONE)--------------------set "ideabox" heading colors to #00A79D and #6D6E71, and font to Roboto
 
-29. set input placeholder text to Open Sans
+29. (DONE)--------------------set input placeholder text to Open Sans
 
 30. (DONE)--------------------set save button background to #00A79D and text color to #FFFFFF
 
 31. (DONE)--------------------set save button hover state background to #045E55 and text color to #FFFFFF
 
-32. set card title text to Roboto Slab Bold 700 and #6D6E71
+32. (DONE)--------------------set card title text to Roboto Slab Bold 700 and #6D6E71
 
-33. set card body text to Open Sans and #939598
+33. (DONE)--------------------set card body text to Open Sans and #939598
 
-34. set "quality" to Roboto, set quality type value to Open Sans, and color to #6D6E71
+34. (DONE)--------------------set "quality" to Roboto, set quality type value to Open Sans, and color to #6D6E71
 
-35. set card border-bottom to appropriate size and #D1D3D4
+35. (DONE)--------------------set card border-bottom to appropriate size and #D1D3D4
 
-36. (JESSICA)--------------------set hover state for delete buttons
+36. set hover state for delete buttons (might require js)
 
-37. (JESSICA)--------------------set hover state for upvote buttons
+37. set hover state for upvote buttons (might require js)
 
-38. (JESSICA)--------------------set hover state for downvote buttons
+38. set hover state for downvote buttons (might require js)
 
 Start stretch goals later.....
