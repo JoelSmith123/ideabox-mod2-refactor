@@ -74,4 +74,10 @@
 
 38. set hover state for downvote buttons (might require js)
 
+39. finish styling header for desktop (use flex box)
+
+40. finish styling search bar for desktop (flexbox and sticky)
+
+41. finish styling card section and cards (use flexbox for cards and section)
+
 Start stretch goals later.....
