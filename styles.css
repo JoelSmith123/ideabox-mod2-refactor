@@ -29,51 +29,78 @@ h1 span {
   color: #6D6E71;
 }
 
-input {
+.user-input {
   display: block;
   height: 3em;
   margin: 0 auto 1.5em;
   outline: none;
-  width: 40%;
+  width: 55%;
 }
 
-input[type=text] {
-
-}
-
-input[type=submit] {
+.submit-btn {
   background-color: #00A79D;
   color: #FFFFFF;
 }
 
-input[type=submit]:hover {
+.submit-btn:hover {
   background-color: #045E55;
 }
 
 /*----------end header section styles----------*/
 /*----------start search bar section styles----------*/
 
-input[name=search] {
+.search-bar {
   margin-top: 2em;
 }
 
 /*----------end search bar section styles----------*/
 /*----------start idea card section styles----------*/
 
-.ideas {
-  background-color: yellowgreen;
-  border-bottom: thin solid #D1D3D4;
+.idea-section {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  width: 40%;
+  width: 55%;
+}
+
+.idea {
+  background-color: white;
+  border-bottom: thin solid #D1D3D4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
 }
 
 h3, h4 {
-  font-family: 'Roboto Slab', serif;
   color: #6D6E71;
+  font-family: 'Roboto Slab', serif;
+  width: 10rem;
+}
+
+.small-btn {
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
 p {
   color: #939598;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.bottom-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-btn {
+  margin-right: .6rem;
 }
 
 .quality {
