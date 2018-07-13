@@ -61,12 +61,14 @@ input[name=search] {
 /*----------start idea card section styles----------*/
 
 .ideas {
-  background-color: lime;
+  background-color: yellowgreen;
+  border-bottom: thin solid #D1D3D4;
   margin: 0 auto;
   width: 40%;
 }
 
-h3 {
+h3, h4 {
+  font-family: 'Roboto Slab', serif;
   color: #6D6E71;
 }
 
@@ -74,8 +76,8 @@ p {
   color: #939598;
 }
 
-h4 {
-  color: #6D6E71;
+.quality {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*----------end idea card section styles----------*/
