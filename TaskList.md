@@ -78,7 +78,7 @@
 
 40. finish styling search bar for desktop (flexbox and sticky)
 
-41. (JESSICA)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
+41. (DONE)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
 
 42. finish styling page for mobile (media query and adjust appropriate values of existing styling)
 
