@@ -136,6 +136,13 @@ p {
 /*----------start mobile styles----------*/
 
 @media only screen and (max-width: 500px) {
+  
+  @media (hover: none) {
+    .submit-btn:active {
+      background-color: #045E55;
+    }
+  }
+
   h1 {
     font-size: 9vw;
     padding: 4.5vw 0;
@@ -151,9 +158,6 @@ p {
     height: 30vw;
   }
 
-  .submit-btn:hover, .submit-btn:active {
-    background-color: #045E55;
-  }
 
   .idea-section {
     width: 85%;
