@@ -12,8 +12,7 @@ submitButton.on("click", function(e) {
   var title = ideaTitle.val();
   var body = ideaBody.val();
   var uniqueID = $.now();
-  ideaSection.append(`
-                      <article class="idea" id="${uniqueID}">
+  ideaSection.append(`<article class="idea" id="${uniqueID}">
                         <div class="top-line">
                           <h3>${title}</h3>
                           <input class="delete-btn small-btn" type="image" name="delete" src="images/delete.svg">
@@ -27,6 +26,30 @@ submitButton.on("click", function(e) {
                       </article>`);
   ideaTitle.val("");
   ideaBody.val("");
+});
+
+ideaSection.on("click", function(e) {
+  if ($(e.target).hasClass("delete-btn")) {
+    $(e.target).parent().parent().remove();
+  } else if ($(e.target).hasClass("upvote-btn")) {
+    if ($(e.target).siblings("h4").children("span").text() === "swill") {
+      $(e.target).siblings("h4").children("span").text("plausible");
+    } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
+      $(e.target).siblings("h4").children("span").text("genius");
+    } else {
+
+    }
+  } else if ($(e.target).hasClass("downvote-btn")) {
+    if ($(e.target).siblings("h4").children("span").text() === "genius") {
+      $(e.target).siblings("h4").children("span").text("plausible");
+    } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
+      $(e.target).siblings("h4").children("span").text("swill");
+    } else {
+
+    }
+  } else {
+
+  }
 });
 
 // ----------This is where the functions live----------
