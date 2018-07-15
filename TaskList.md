@@ -74,12 +74,12 @@
 
 38. set hover state for downvote buttons (might require js)
 
-39. (JOEL)--------------------finish styling header for desktop (use flex box)
+39. (DONE)--------------------finish styling header for desktop (use flex box)
 
 40. (DONE)--------------------finish styling search bar for desktop (flexbox and sticky)
 
 41. (DONE)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
 
-42. (JOEL)--------------------finish styling page for mobile (media query and adjust appropriate values of existing styling)
+42. (DONE)--------------------finish styling page for mobile (media query and adjust appropriate values of existing styling)
 
 Start stretch goals later.....
