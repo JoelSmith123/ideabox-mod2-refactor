@@ -2,7 +2,7 @@
 
 2. (DONE)--------------------id should be unique, title and body should be free-form strings (data types -- done in Javascript)
 
-3. quality should be: "genius","plausible","swill" (data types -- done in Javascript)
+3. (JESSICA)--------------------quality should be: "genius","plausible","swill" (data types -- done in Javascript)
 
 4. (DONE)--------------------quality should default to "swill" (default quality -- done in Javascript)
 
