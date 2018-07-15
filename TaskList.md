@@ -1,10 +1,10 @@
 1. (DONE)--------------------each idea card will have an id, title, body text, quality, quality buttons, delete button
 
-2. id should be unique, title and body should be free-form strings (data types -- done in Javascript)
+2. (DONE)--------------------id should be unique, title and body should be free-form strings (data types -- done in Javascript)
 
 3. quality should be: "genius","plausible","swill" (data types -- done in Javascript)
 
-4. quality should default to "swill" (default quality -- done in Javascript)
+4. (DONE)--------------------quality should default to "swill" (default quality -- done in Javascript)
 
 5. (DONE)--------------------user should see a list of all idea cards, including title, body, quality for each
 
@@ -12,13 +12,13 @@
 
 7. (DONE)--------------------user should see two text boxes, one for title, one for idea, and a save button
 
-8. when a user clicks save (event listener needs to be added for "save" button)
+8. (DONE)--------------------when a user clicks save (event listener needs to be added for "save" button)
 
-9. #8 -> a new idea card should appear (generate new card using Javascript)
+9. (DONE)--------------------#8 -> a new idea card should appear (generate new card using Javascript)
 
-10. #8 -> the text fields should be cleared (clear input field values using Javascript)
+10. (DONE)--------------------#8 -> the text fields should be cleared (clear input field values using Javascript)
 
-11. #8 -> the page should not reload (cancel default event or use a generic button instead of a submit button)
+11. (DONE)--------------------#8 -> the page should not reload (cancel default event or use a generic button instead of a submit button)
 
 12. #8 -> the idea card should persist on reload (Don't know how to do this yet)
 
