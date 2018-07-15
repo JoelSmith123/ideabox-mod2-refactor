@@ -29,6 +29,31 @@ submitButton.on("click", function(e) {
   ideaBody.val("");
 });
 
+ideaSection.on("click", function(e) {
+  // e.preventDefault();
+  if ($(e.target).hasClass("delete-btn")) {
+    $(e.target).parent().parent().remove();
+  } else if ($(e.target).hasClass("upvote-btn")) {
+    if ($(e.target).siblings("h4").children("span").text() === "swill") {
+      $(e.target).siblings("h4").children("span").text("plausible");
+    } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
+      $(e.target).siblings("h4").children("span").text("genius");
+    } else {
+
+    }
+  } else if ($(e.target).hasClass("downvote-btn")) {
+    if ($(e.target).siblings("h4").children("span").text() === "genius") {
+      $(e.target).siblings("h4").children("span").text("plausible");
+    } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
+      $(e.target).siblings("h4").children("span").text("swill");
+    } else {
+
+    }
+  } else {
+
+  }
+});
+
 // ----------This is where the functions live----------
 
 
