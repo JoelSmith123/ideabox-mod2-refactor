@@ -80,6 +80,6 @@
 
 41. (DONE)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
 
-42. finish styling page for mobile (media query and adjust appropriate values of existing styling)
+42. (JOEL)--------------------finish styling page for mobile (media query and adjust appropriate values of existing styling)
 
 Start stretch goals later.....
