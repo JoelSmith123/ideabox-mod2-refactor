@@ -12,8 +12,7 @@ submitButton.on("click", function(e) {
   var title = ideaTitle.val();
   var body = ideaBody.val();
   var uniqueID = $.now();
-  ideaSection.append(`
-                      <article class="idea" id="${uniqueID}">
+  ideaSection.append(`<article class="idea" id="${uniqueID}">
                         <div class="top-line">
                           <h3>${title}</h3>
                           <input class="delete-btn small-btn" type="image" name="delete" src="images/delete.svg">
@@ -30,7 +29,6 @@ submitButton.on("click", function(e) {
 });
 
 ideaSection.on("click", function(e) {
-  // e.preventDefault();
   if ($(e.target).hasClass("delete-btn")) {
     $(e.target).parent().parent().remove();
   } else if ($(e.target).hasClass("upvote-btn")) {
