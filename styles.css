@@ -151,8 +151,8 @@ p {
     height: 30vw;
   }
 
-  .user-idea::placeholder {
-    
+  .submit-btn:hover, .submit-btn:active {
+    background-color: #045E55;
   }
 
   .idea-section {
