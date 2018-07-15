@@ -74,7 +74,7 @@
 
 38. set hover state for downvote buttons (might require js)
 
-39. finish styling header for desktop (use flex box)
+39. (JOEL)--------------------finish styling header for desktop (use flex box)
 
 40. (DONE)--------------------finish styling search bar for desktop (flexbox and sticky)
 
