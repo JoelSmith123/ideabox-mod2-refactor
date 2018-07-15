@@ -2,7 +2,7 @@
 
 2. (DONE)--------------------id should be unique, title and body should be free-form strings (data types -- done in Javascript)
 
-3. quality should be: "genius","plausible","swill" (data types -- done in Javascript)
+3. (DONE)--------------------quality should be: "genius","plausible","swill" (data types -- done in Javascript)
 
 4. (DONE)--------------------quality should default to "swill" (default quality -- done in Javascript)
 
@@ -22,17 +22,17 @@
 
 12. #8 -> the idea card should persist on reload (Don't know how to do this yet)
 
-13. when user clicks delete (add event listener for delete buttons on cards -- Javascript -- event.target)
+13. (DONE)--------------------when user clicks delete (add event listener for delete buttons on cards -- Javascript -- event.target)
 
-14. #13 -> idea card should be removed (remove using js)
+14. (DONE)--------------------#13 -> idea card should be removed (remove using js)
 
-15. #13 -> the page should not reload (not sure why this applies here, but probably cancel default event)
+15. (DONE)--------------------#13 -> the page should not reload (not sure why this applies here, but probably cancel default event)
 
 16. #13 -> the idea should be removed from local storage, not appear on reload (Don't know how to do this yet)
 
-17. when user clicks on upvote button, user quality should go up one notch, stopping at "genius" (event listener and for loop -- Javascript)
+17. (DONE)--------------------when user clicks on upvote button, user quality should go up one notch, stopping at "genius" (event listener and for loop -- Javascript)
 
-18. when user clicks on downvote button, user quality should go down one notch, stopping at "swill" (event listener and for loop -- Javascript)
+18. (DONE)--------------------when user clicks on downvote button, user quality should go down one notch, stopping at "swill" (event listener and for loop -- Javascript)
 
 19. when user clicks on title or body of an idea, that text should become editable text field, value set at existing content (event listener and toggle content editable -- Javascript)
 
@@ -74,12 +74,12 @@
 
 38. set hover state for downvote buttons (might require js)
 
-39. finish styling header for desktop (use flex box)
+39. (JOEL)--------------------finish styling header for desktop (use flex box)
 
 40. (DONE)--------------------finish styling search bar for desktop (flexbox and sticky)
 
 41. (DONE)--------------------finish styling card section and cards for desktop (use flexbox for cards and section)
 
-42. finish styling page for mobile (media query and adjust appropriate values of existing styling)
+42. (JOEL)--------------------finish styling page for mobile (media query and adjust appropriate values of existing styling)
 
 Start stretch goals later.....
