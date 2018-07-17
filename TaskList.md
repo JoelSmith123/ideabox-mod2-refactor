@@ -44,9 +44,9 @@
 
 23. (DONE)--------------------there should be a search field at the top of the idea list
 
-24. when user types in search box, cards should be hidden unless the title or body contains matching text (the page should not reload) (event listener for typing in search box, find matching text in title or body (not sure how to do), toggle hide for cards that don't match -- Javascript)
+24. (JESSICA)--------------------when user types in search box, cards should be hidden unless the title or body contains matching text (the page should not reload) (event listener for typing in search box, find matching text in title or body (not sure how to do), toggle hide for cards that don't match -- Javascript)
 
-25. clearing the search box should restore all ideas to the list (event listener, toggle to unhide any hidden cards -- Javascript)
+25. (JESSICA)--------------------clearing the search box should restore all ideas to the list (event listener, toggle to unhide any hidden cards -- Javascript)
 
 26. (DONE)--------------------link in text types (html and css)
 
