@@ -101,6 +101,7 @@ h1 span {
 h3, h4 {
   color: #6D6E71;
   font-family: 'Roboto Slab', serif;
+  outline: none;
   width: auto;
 }
 
@@ -109,13 +110,41 @@ h3 {
 }
 
 .small-btn {
+  border: none;
   height: 1.3rem;
   width: 1.3rem;
+  outline: none;
 }
+
+.delete-btn {
+  background-image: url(images/delete.svg);
+}
+
+.delete-btn:hover {
+  background-image: url(images/delete-hover.svg);
+}
+
+.upvote-btn {
+  background-image: url(images/upvote.svg);
+}
+
+.upvote-btn:hover {
+  background-image: url(images/upvote-hover.svg);
+}
+
+.downvote-btn {
+  background-image: url(images/downvote.svg);
+}
+
+.downvote-btn:hover {
+  background-image: url(images/downvote-hover.svg);
+}
+
 
 p {
   color: #939598;
   margin: 1rem 0rem 1rem 0rem;
+  outline: none;
 }
 
 .bottom-line {
