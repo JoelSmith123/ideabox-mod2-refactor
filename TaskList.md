@@ -34,7 +34,7 @@
 
 18. (DONE)--------------------when user clicks on downvote button, user quality should go down one notch, stopping at "swill" (event listener and for loop -- Javascript)
 
-19. when user clicks on title or body of an idea, that text should become editable text field, value set at existing content (event listener and toggle content editable -- Javascript)
+19. (JOEL)-------------------- when user clicks on title or body of an idea, that text should become editable text field, value set at existing content (event listener and toggle content editable -- Javascript)
 
 20. when user clicks outside that text field, the changes should be saved (event listener and set input value as content value and toggle content editable -- Javascript)
 
@@ -68,11 +68,11 @@
 
 35. (DONE)--------------------set card border-bottom to appropriate size and #D1D3D4
 
-36. set hover state for delete buttons (might require js)
+36. (JOEL)--------------------set hover state for delete buttons (might require js)
 
-37. set hover state for upvote buttons (might require js)
+37. (JOEL)--------------------set hover state for upvote buttons (might require js)
 
-38. set hover state for downvote buttons (might require js)
+38. (JOEL)--------------------set hover state for downvote buttons (might require js)
 
 39. (DONE)--------------------finish styling header for desktop (use flex box)
 
