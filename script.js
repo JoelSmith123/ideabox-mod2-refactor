@@ -4,6 +4,8 @@ var ideaTitle = $(".user-title");
 var ideaBody = $(".user-idea");
 var submitButton = $(".submit-btn");
 var ideaSection = $(".idea-section");
+var userSearch = $(".search-bar");
+var card = $(".idea");
 
 // ----------This is where the event listeners live----------
 
@@ -51,6 +53,18 @@ ideaSection.on("click", function(e) {
 
   }
 });
+
+userSearch.on("keyup", function() {
+  if (userSearch.val() === "") {
+    $("article").show();
+  } else {
+    $("p:not(\":contains(" + userSearch.val() + ")\")").parent().hide();
+    $("p:contains(" + userSearch.val() + ")").parent().show();
+    $("h3:not(\":contains(" + userSearch.val() + ")\")").parent().parent().hide();
+    $("h3:contains(" + userSearch.val() + ")").parent().parent().show();
+  };
+});
+
 
 // ----------This is where the functions live----------
 
