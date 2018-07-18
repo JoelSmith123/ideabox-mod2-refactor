@@ -8,7 +8,7 @@
 
 5. (DONE)--------------------user should see a list of all idea cards, including title, body, quality for each
 
-6. ideas should appear in chronological order (card order -- probably Javascript)
+**6. ideas should appear in chronological order (card order -- probably Javascript)**
 
 7. (DONE)--------------------user should see two text boxes, one for title, one for idea, and a save button
 
@@ -20,7 +20,7 @@
 
 11. (DONE)--------------------#8 -> the page should not reload (cancel default event or use a generic button instead of a submit button)
 
-12. #8 -> the idea card should persist on reload (Don't know how to do this yet)
+**12. #8 -> the idea card should persist on reload (Don't know how to do this yet)**
 
 13. (DONE)--------------------when user clicks delete (add event listener for delete buttons on cards -- Javascript -- event.target)
 
@@ -28,7 +28,7 @@
 
 15. (DONE)--------------------#13 -> the page should not reload (not sure why this applies here, but probably cancel default event)
 
-16. #13 -> the idea should be removed from local storage, not appear on reload (Don't know how to do this yet)
+**16. #13 -> the idea should be removed from local storage, not appear on reload (Don't know how to do this yet)**
 
 17. (DONE)--------------------when user clicks on upvote button, user quality should go up one notch, stopping at "genius" (event listener and for loop -- Javascript)
 
@@ -36,11 +36,11 @@
 
 19. (DONE)-------------------- when user clicks on title or body of an idea, that text should become editable text field, value set at existing content (event listener and toggle content editable -- Javascript)
 
-20. when user clicks outside that text field, the changes should be saved (event listener and set input value as content value and toggle content editable -- Javascript)
+**20. when user clicks outside that text field, the changes should be saved (event listener and set input value as content value and toggle content editable -- Javascript)**
 
-21. when user presses enter, the changes should be saved (event listener and set input value as content value and toggle content editable -- Javascript)
+**21. when user presses enter, the changes should be saved (event listener and set input value as content value and toggle content editable -- Javascript)**
 
-22. if the user reloads the page, the changes should persist. (Don't know how to do this yet.)
+**22. if the user reloads the page, the changes should persist. (Don't know how to do this yet.)**
 
 23. (DONE)--------------------there should be a search field at the top of the idea list
 
