@@ -8,7 +8,7 @@
 
 5. (DONE)--------------------user should see a list of all idea cards, including title, body, quality for each
 
-### **6. ideas should appear in chronological order (card order -- probably Javascript)**
+6. (DONE)--------------------ideas should appear in chronological order (card order -- probably Javascript)
 
 7. (DONE)--------------------user should see two text boxes, one for title, one for idea, and a save button
 
