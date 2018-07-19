@@ -57,12 +57,11 @@ $(function() {
 ideaSection.on("click", function(e) {
   if ($(e.target).hasClass("delete-btn")) {
     $(e.target).parent().parent().remove();
-    var tempID = $(e.target).parent().parent().attr("id");
-    $.each(allCards, function() {
-      if (tempID == this.id) {
-        
-      }
-    })
+    var tempID = parseInt($(e.target).parent().parent().attr("id"));
+    allCards = $.grep(allCards, function(object) {
+      return object.id != tempID;
+    });
+    localStorage.setItem("allCards", JSON.stringify(allCards));
   } else if ($(e.target).hasClass("upvote-btn")) {
     if ($(e.target).siblings("h4").children("span").text() === "swill") {
       $(e.target).siblings("h4").children("span").text("plausible");
