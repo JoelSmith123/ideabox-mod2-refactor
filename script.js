@@ -5,7 +5,7 @@ var ideaBody = $(".user-idea");
 var submitButton = $(".submit-btn");
 var ideaSection = $(".idea-section");
 var userSearch = $(".search-bar");
-var allCards = Array(1);
+var allCards = [null];
 
 // ----------This is where the event listeners live----------
 
@@ -17,6 +17,9 @@ submitButton.on("click", function(e) {
   var quality = "swill";
   var newCard = $.makeArray(new Idea(id, title, body, quality));
   $.merge(allCards, newCard);
+  allCards = $.grep(allCards, function(value) {
+      return value !== null;
+    });
   localStorage.setItem("allCards", JSON.stringify(allCards));
   ideaSection.append(`<article class="idea" id="${id}">
                         <div class="top-line">
@@ -35,29 +38,31 @@ submitButton.on("click", function(e) {
 });
 
 $(function() {
-  allCards = JSON.parse(localStorage.getItem("allCards"));
-  $.each(allCards, function() {
-    ideaSection.append(`<article class="idea" id="${this.id}">
-                          <div class="top-line">
-                            <h3 contenteditable="true">${this.title}</h3>
-                            <input class="delete-btn small-btn" type="button" name="delete" src="images/delete.svg">
-                          </div>
-                          <p contenteditable="true">${this.body}</p>
-                          <div class="bottom-line">
-                            <input class="upvote-btn small-btn bottom-btn" type="button" name="upvote">
-                            <input class="downvote-btn small-btn bottom-btn" type="button" name="downvote">
-                            <h4>quality: <span class="quality">${this.quality}</span></h4>
-                          </div>
-                        </article>`);
-  })
-})
+  if (JSON.parse(localStorage.getItem("allCards")) !== null) {
+    allCards = JSON.parse(localStorage.getItem("allCards"));
+    $.each(allCards, function() {
+      ideaSection.append(`<article class="idea" id="${this.id}">
+                            <div class="top-line">
+                              <h3 contenteditable="true">${this.title}</h3>
+                              <input class="delete-btn small-btn" type="button" name="delete" src="images/delete.svg">
+                            </div>
+                            <p contenteditable="true">${this.body}</p>
+                            <div class="bottom-line">
+                              <input class="upvote-btn small-btn bottom-btn" type="button" name="upvote">
+                              <input class="downvote-btn small-btn bottom-btn" type="button" name="downvote">
+                              <h4>quality: <span class="quality">${this.quality}</span></h4>
+                            </div>
+                          </article>`);
+    });
+  }
+});
 
 ideaSection.on("click", function(e) {
   if ($(e.target).hasClass("delete-btn")) {
     $(e.target).parent().parent().remove();
     var tempID = parseInt($(e.target).parent().parent().attr("id"));
     allCards = $.grep(allCards, function(object) {
-      return object.id != tempID;
+      return object.id !== tempID;
     });
     localStorage.setItem("allCards", JSON.stringify(allCards));
   } else if ($(e.target).hasClass("upvote-btn")) {
@@ -65,20 +70,14 @@ ideaSection.on("click", function(e) {
       $(e.target).siblings("h4").children("span").text("plausible");
     } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
       $(e.target).siblings("h4").children("span").text("genius");
-    } else {
-
-    }
+    } else {}
   } else if ($(e.target).hasClass("downvote-btn")) {
     if ($(e.target).siblings("h4").children("span").text() === "genius") {
       $(e.target).siblings("h4").children("span").text("plausible");
     } else if ($(e.target).siblings("h4").children("span").text() === "plausible") {
       $(e.target).siblings("h4").children("span").text("swill");
-    } else {
-
-    }
-  } else {
-
-  }
+    } else {}
+  } else {}
 });
 
 userSearch.on("keyup", function() {
