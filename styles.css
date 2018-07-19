@@ -54,7 +54,7 @@ h1 span {
   border-radius: none;
   color: #FFFFFF;
   font-size: 1.6vw;
-  padding: 0rem;
+  padding: 0;
   -webkit-appearance: none;
 }
 
@@ -67,7 +67,7 @@ h1 span {
 
 .sticky-search {
   background-color: #FFFFFF;
-  padding-bottom: .1rem;
+  padding-bottom: 2rem;
   padding-top: 1.5rem;
   position: sticky;
   top: 0rem;
@@ -109,10 +109,14 @@ h3 {
   font-size: 2vw;
 }
 
+h4 {
+  font-size: 1.3vw;
+}
+
 .small-btn {
   border: none;
-  height: 1.3rem;
-  width: 1.3rem;
+  height: 1.7vw;
+  width: 1.7vw;
   outline: none;
 }
 
@@ -140,9 +144,9 @@ h3 {
   background-image: url(images/downvote-hover.svg);
 }
 
-
 p {
   color: #939598;
+  font-size: 1.5vw;
   margin: 1rem 0rem 1rem 0rem;
   outline: none;
 }
@@ -164,7 +168,7 @@ p {
 /*----------end desktop styles----------*/
 /*----------start mobile styles----------*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   
   @media (hover: none) {
     .submit-btn:active {
@@ -177,6 +181,11 @@ p {
     padding: 4.5vw 0;
   }
 
+  .small-btn {
+    height: 5vw;
+    width: 5vw;
+  }
+
   .user-input {
     font-size: 6vw;
     height: 10vw;
@@ -186,7 +195,6 @@ p {
   .user-idea {
     height: 30vw;
   }
-
 
   .idea-section {
     width: 85%;
@@ -210,8 +218,5 @@ p {
     width: auto;
   }
 }
-
-
-
 
 /*----------end mobile styles----------*/
