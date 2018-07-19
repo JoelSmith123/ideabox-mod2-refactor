@@ -5,7 +5,7 @@ var ideaBody = $(".user-idea");
 var submitButton = $(".submit-btn");
 var ideaSection = $(".idea-section");
 var userSearch = $(".search-bar");
-var body = $("body");
+var editBody = $("p");
 var allCards = Array(1);
 
 console.log(allCards);
@@ -88,16 +88,24 @@ userSearch.on("keyup", function() {
   if (userSearch.val() === "") {
     $("article").show();
   } else {
-    $("p:not(\":contains(" + userSearch.val() + ")\")").parent().hide();
-    $("p:contains(" + userSearch.val() + ")").parent().show();
-    $("h3:not(\":contains(" + userSearch.val() + ")\")").parent().parent().hide();
-    $("h3:contains(" + userSearch.val() + ")").parent().parent().show();
+    $("p:not(\":contains(" + userSearch.val().toLowerCase() + ")\")").parent().hide();
+    $("p:contains(" + userSearch.val().toLowerCase() + ")").parent().show();
+    $("h3:not(\":contains(" + userSearch.val().toLowerCase() + ")\")").parent().parent().hide();
+    $("h3:contains(" + userSearch.val().toLowerCase() + ")").parent().parent().show();
   };
 });
 
-body.on("click", function(e) {
-  var tempID = parseInt(body.parent().attr("id"));
-  localStorage.setItem("allCards", JSON.stringify(allCards));
+$("body").on("click", function() {
+  // var tempID = parseInt(editBody.parent().attr("id"));
+  var editedText = Array(0);
+  for (var i = 0; i < allCards.length; i++) {
+    editedText.push(allCards[i].body);
+    localStorage.setItem("edited",  editedText[i]);
+    allCards[i].body = localStorage.getItem("edited");
+
+    // console.log(localStorage.allCards[i].body);
+  }
+    console.log(editedText);
 });
 
 
