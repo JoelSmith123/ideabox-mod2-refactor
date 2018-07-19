@@ -5,6 +5,7 @@ var ideaBody = $(".user-idea");
 var submitButton = $(".submit-btn");
 var ideaSection = $(".idea-section");
 var userSearch = $(".search-bar");
+var body = $("body");
 var allCards = Array(1);
 
 console.log(allCards);
@@ -92,6 +93,11 @@ userSearch.on("keyup", function() {
     $("h3:not(\":contains(" + userSearch.val() + ")\")").parent().parent().hide();
     $("h3:contains(" + userSearch.val() + ")").parent().parent().show();
   };
+});
+
+body.on("click", function(e) {
+  var tempID = parseInt(body.parent().attr("id"));
+  localStorage.setItem("allCards", JSON.stringify(allCards));
 });
 
 
