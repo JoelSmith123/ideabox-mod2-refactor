@@ -20,7 +20,7 @@
 
 11. (DONE)--------------------#8 -> the page should not reload (cancel default event or use a generic button instead of a submit button)
 
-### **12. #8 -> the idea card should persist on reload (Don't know how to do this yet)**
+12. (DONE)--------------------#8 -> the idea card should persist on reload (Don't know how to do this yet)
 
 13. (DONE)--------------------when user clicks delete (add event listener for delete buttons on cards -- Javascript -- event.target)
 
@@ -28,7 +28,7 @@
 
 15. (DONE)--------------------#13 -> the page should not reload (not sure why this applies here, but probably cancel default event)
 
-### **16. #13 -> the idea should be removed from local storage, not appear on reload (Don't know how to do this yet)**
+16. (DONE)--------------------#13 -> the idea should be removed from local storage, not appear on reload (Don't know how to do this yet)
 
 17. (DONE)--------------------when user clicks on upvote button, user quality should go up one notch, stopping at "genius" (event listener and for loop -- Javascript)
 
