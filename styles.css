@@ -1,0 +1,222 @@
+/*----------NO FLEX ZONE----------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*----------NO FLEX ZONE----------*/
+/*----------start desktop styles----------*/
+/*----------start header section styles----------*/
+
+header {
+  background-color: #E5F3F2;
+  padding-bottom: 0.4rem;
+}
+
+h1 {
+  color: #00A79D;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4.3vw;
+  text-align: center;
+  padding: 2.5vw 0;
+}
+
+h1 span {
+  color: #6D6E71;
+}
+
+.user-input {
+  border: .1rem solid #D1D3D4;
+  display: block;
+  font-size: 2vw;
+  height: 3vw;
+  margin: 0 auto 1.5rem;
+  outline: none;
+  padding-left: .4rem;
+  width: 55%;
+}
+
+.user-input::placeholder {
+  color: #D1D3D4;
+}
+
+.user-idea {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #00A79D;
+  border: none;
+  border-radius: none;
+  color: #FFFFFF;
+  font-size: 1.6vw;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+.submit-btn:hover {
+  background-color: #045E55;
+}
+
+/*----------end header section styles----------*/
+/*----------start search bar section styles----------*/
+
+.sticky-search {
+  background-color: #FFFFFF;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  position: sticky;
+  top: 0rem;
+}
+
+/*----------end search bar section styles----------*/
+/*----------start idea card section styles----------*/
+
+.idea-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 55%;
+}
+
+.idea {
+  background-color: white;
+  border-bottom: .1rem solid #D1D3D4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3, h4 {
+  color: #6D6E71;
+  font-family: 'Roboto Slab', serif;
+  outline: none;
+  width: auto;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+h4 {
+  font-size: 1.3vw;
+}
+
+.small-btn {
+  border: none;
+  height: 1.7vw;
+  width: 1.7vw;
+  outline: none;
+}
+
+.delete-btn {
+  background-image: url(images/delete.svg);
+}
+
+.delete-btn:hover {
+  background-image: url(images/delete-hover.svg);
+}
+
+.upvote-btn {
+  background-image: url(images/upvote.svg);
+}
+
+.upvote-btn:hover {
+  background-image: url(images/upvote-hover.svg);
+}
+
+.downvote-btn {
+  background-image: url(images/downvote.svg);
+}
+
+.downvote-btn:hover {
+  background-image: url(images/downvote-hover.svg);
+}
+
+p {
+  color: #939598;
+  font-size: 1.5vw;
+  margin: 1rem 0rem 1rem 0rem;
+  outline: none;
+}
+
+.bottom-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-btn {
+  margin-right: .6rem;
+}
+
+.quality {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*----------end idea card section styles----------*/
+/*----------end desktop styles----------*/
+/*----------start mobile styles----------*/
+
+@media only screen and (max-width: 900px) {
+  
+  @media (hover: none) {
+    .submit-btn:active {
+      background-color: #045E55;
+    }
+  }
+
+  h1 {
+    font-size: 9vw;
+    padding: 4.5vw 0;
+  }
+
+  .small-btn {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .user-input {
+    font-size: 6vw;
+    height: 10vw;
+    width: 85%;
+  }
+
+  .user-idea {
+    height: 30vw;
+  }
+
+  .idea-section {
+    width: 85%;
+  }
+
+  h3 {
+    font-size: 6.5vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+  }
+
+  input[type=image] {
+    height: 7vw;
+    width: auto;
+  }
+}
+
+/*----------end mobile styles----------*/
